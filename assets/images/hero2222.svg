@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Enhanced gradient and filter definitions -->
+  <defs>
+    <!-- Core sphere gradient -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="20%" stop-color="#64ffda" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#4a90e2" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3d5afe" stop-opacity="0.4"/>
+    </radialGradient>
+    
+    <!-- Outer sphere gradient -->
+    <radialGradient id="outerGlow" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#4a90e2" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#4a90e2" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000033" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Particle glow effects -->
+    <filter id="particleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <!-- Data stream effect -->
+    <linearGradient id="dataStream" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#64ffda" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0.1"/>
+      <animate attributeName="x1" from="0%" to="100%" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="100%" to="200%" dur="2s" repeatCount="indefinite"/>
+    </linearGradient>
+    
+    <!-- Constellation pattern -->
+    <pattern id="constellation" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#ffffff" opacity="0.5"/>
+      <circle cx="40" cy="30" r="0.8" fill="#ffffff" opacity="0.4"/>
+      <circle cx="70" cy="15" r="1.2" fill="#ffffff" opacity="0.6"/>
+      <circle cx="100" cy="60" r="0.7" fill="#ffffff" opacity="0.3"/>
+      <circle cx="150" cy="90" r="1" fill="#ffffff" opacity="0.5"/>
+      <circle cx="180" cy="150" r="0.9" fill="#ffffff" opacity="0.4"/>
+      <circle cx="130" cy="180" r="1.1" fill="#ffffff" opacity="0.6"/>
+      <circle cx="30" cy="170" r="0.8" fill="#ffffff" opacity="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background constellation effect -->
+  <rect x="0" y="0" width="800" height="800" fill="url(#constellation)" opacity="0.5"/>
+  
+  <!-- Main container -->
+  <g transform="translate(400, 400)">
+    <!-- Outer energy field -->
+    <circle cx="0" cy="0" r="320" fill="url(#outerGlow)">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Orbital rings with dynamic effects -->
+    <!-- Outer orbit -->
+    <circle cx="0" cy="0" r="280" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="10,4">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="180s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Middle orbit with glowing effect -->
+    <circle cx="0" cy="0" r="230" fill="none" stroke="#4a90e2" stroke-width="1.5" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.5;0.8;0.5" dur="7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="140s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner pulsing orbit -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#64ffda" stroke-width="1" stroke-opacity="0.7" stroke-dasharray="1,1">
+      <animate attributeName="r" values="180;175;180" dur="10s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="100s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Dynamic data layer -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#ff5252" stroke-width="0.5" stroke-opacity="0.6" stroke-dasharray="12,4,1,4">
+      <animate attributeName="stroke-dashoffset" values="0;100" dur="15s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="60s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Orbiting particles with enhanced glow effects -->
+    <!-- Outer orbit particles -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="80s" repeatCount="indefinite"/>
+      <circle cx="280" cy="0" r="6" fill="#ffffff" filter="url(#particleGlow)">
+        <animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="280" r="5" fill="#64ffda" filter="url(#particleGlow)">
+        <animate attributeName="r" values="5;7;5" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-198" cy="198" r="7" fill="#ff5252" filter="url(#particleGlow)">
+        <animate attributeName="r" values="7;9;7" dur="6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Middle orbit particles -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
+      <circle cx="0" cy="-230" r="6" fill="#ffeb3b" filter="url(#particleGlow)">
+        <animate attributeName="r" values="6;7;6" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="163" cy="163" r="8" fill="#5e35b1" filter="url(#particleGlow)">
+        <animate attributeName="r" values="8;10;8" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-230" cy="0" r="5" fill="#4fc3f7" filter="url(#particleGlow)">
+        <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Inner orbit particles -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+      <circle cx="127" cy="-127" r="6" fill="#ff9800" filter="url(#particleGlow)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="-180" cy="0" r="7" fill="#8bc34a" filter="url(#particleGlow)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="90" cy="156" r="5" fill="#e040fb" filter="url(#particleGlow)">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Dynamic data connections -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="120s" repeatCount="indefinite"/>
+      <path d="M0,0 L180,120 A200,200 0 0,1 120,180 Z" fill="none" stroke="url(#dataStream)" stroke-width="1.5">
+        <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="10s" repeatCount="indefinite"/>
+      </path>
+      <path d="M0,0 L-150,100 A180,180 0 0,1 -100,150 Z" fill="none" stroke="url(#dataStream)" stroke-width="1.5">
+        <animate attributeName="stroke-opacity" values="0.6;0.3;0.6" dur="8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M0,0 L100,-170 A190,190 0 0,1 170,-100 Z" fill="none" stroke="url(#dataStream)" stroke-width="1.5">
+        <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="12s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Floating tech elements -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="100s" repeatCount="indefinite"/>
+      <!-- Data cubes -->
+      <rect x="150" y="80" width="20" height="20" rx="2" fill="#64ffda" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-80" y="140" width="16" height="16" rx="2" fill="#ff5252" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="60" y="-160" width="24" height="24" rx="2" fill="#ffeb3b" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.9;0.7" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <!-- Core processing nodes -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
+      <circle cx="0" cy="-100" r="12" fill="#ffffff" opacity="0.9" filter="url(#particleGlow)"/>
+      <circle cx="87" cy="50" r="10" fill="#ffffff" opacity="0.9" filter="url(#particleGlow)"/>
+      <circle cx="-87" cy="50" r="10" fill="#ffffff" opacity="0.9" filter="url(#particleGlow)"/>
+      
+      <!-- Node connection lines -->
+      <line x1="0" y1="-100" x2="87" y2="50" stroke="#ffffff" stroke-width="1" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite"/>
+      </line>
+      <line x1="87" y1="50" x2="-87" y2="50" stroke="#ffffff" stroke-width="1" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="-87" y1="50" x2="0" y2="-100" stroke="#ffffff" stroke-width="1" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="5s" repeatCount="indefinite"/>
+      </line>
+    </g>
+    
+    <!-- Central technology core with dynamic effects -->
+    <circle cx="0" cy="0" r="70" fill="url(#outerGlow)" opacity="0.8">
+      <animate attributeName="r" values="70;75;70" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="0" cy="0" r="45" fill="url(#coreGlow)" filter="url(#particleGlow)">
+      <animate attributeName="r" values="45;50;45" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Inner core pulse effect -->
+    <circle cx="0" cy="0" r="20" fill="#ffffff" opacity="0.9">
+      <animate attributeName="r" values="20;25;20" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Energy beams from core -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+      <line x1="0" y1="0" x2="280" y2="0" stroke="#4a90e2" stroke-width="3" opacity="0.6" stroke-dasharray="10,15">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="0" y1="0" x2="0" y2="-280" stroke="#64ffda" stroke-width="3" opacity="0.6" stroke-dasharray="10,15">
+        <animate attributeName="opacity" values="0.6;0.3;0.6" dur="5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="0" y1="0" x2="-198" y2="-198" stroke="#ff5252" stroke-width="3" opacity="0.6" stroke-dasharray="10,15">
+        <animate attributeName="opacity" values="0.6;0.4;0.6" dur="6s" repeatCount="indefinite"/>
+      </line>
+      <line x1="0" y1="0" x2="198" y2="198" stroke="#ffeb3b" stroke-width="3" opacity="0.6" stroke-dasharray="10,15">
+        <animate attributeName="opacity" values="0.6;0.3;0.6" dur="7s" repeatCount="indefinite"/>
+      </line>
+    </g>
+  </g>
+</svg>
