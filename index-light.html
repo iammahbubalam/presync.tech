@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presync.tech - Advanced Software Engineering & Development Solutions</title>
+    <meta name="description" content="Presync.tech delivers cutting-edge software engineering solutions including web development, AI/ML, cloud architecture, and mobile apps. Transform your business with our expert team." />
+    <meta name="keywords" content="software engineering, web development, AI solutions, machine learning, MERN stack, cloud architecture, mobile app development, enterprise software" />
+    <meta name="author" content="Presync.tech" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.presync.tech/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.presync.tech/" />
+    <meta property="og:title" content="Presync.tech - Advanced Software Engineering Solutions" />
+    <meta property="og:description" content="Transform your business with innovative software solutions. Expert team delivering web, mobile, AI, and cloud solutions." />
+    <meta property="og:image" content="https://www.presync.tech/assets/images/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.presync.tech/" />
+    <meta property="twitter:title" content="Presync.tech - Advanced Software Engineering Solutions" />
+    <meta property="twitter:description" content="Transform your business with innovative software solutions. Expert team delivering web, mobile, AI, and cloud solutions." />
+    <meta property="twitter:image" content="https://www.presync.tech/assets/images/twitter-image.jpg" />
+    
+    <!-- Preconnect to important domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    
+    <!-- Structured data for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Presync.tech",
+      "url": "https://www.presync.tech/",
+      "logo": "https://www.presync.tech/assets/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+8801997125063",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Bengali"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Block-B, Sayed Nagar, Vatara",
+        "addressLocality": "Dhaka",
+        "postalCode": "1212",
+        "addressCountry": "BD"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/105935955/",
+        "https://github.com/presync-tech"
+      ]
+    }
+    </script>
+    
+    <!-- Structured data for services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "position": 1,
+          "name": "Web Development",
+          "description": "Building responsive, high-performance web applications using MERN stack (MongoDB, Express, React, Node.js).",
+          "provider": {
+            "@type": "Organization",
+            "name": "Presync.tech"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 2,
+          "name": "Backend Engineering",
+          "description": "Robust backend services with Java, Spring Boot, Go, and enterprise-grade database solutions with PostgreSQL.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Presync.tech"
+          }
+        },
+        {
+          "@type": "Service",
+          "position": 3,
+          "name": "AI & ML Solutions",
+          "description": "Cutting-edge artificial intelligence and machine learning solutions for data analysis, prediction, and automation.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Presync.tech"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      /* Light theme overrides */
+      .tech-particles {
+        filter: opacity(0.7);
+      }
+      .hero-center-image {
+        filter: none; /* Remove any filters applied to hero image */
+      }
+      .filter.invert {
+        filter: none; /* Prevent inversion of tech icons */
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-gray-800">
+    <!-- Background for light theme -->
+    <div
+      class="fixed inset-0 bg-gradient-to-br from-blue-50 via-white to-gray-100 -z-10"
+    ></div>
+    <div class="fixed inset-0 bg-white bg-opacity-50 -z-10"></div>
+    <div class="fixed inset-0 overflow-hidden -z-10">
+      <div class="tech-particles"></div>
+    </div>
+
+    <!-- Navigation - Light theme -->
+    <nav
+      class="bg-white bg-opacity-90 text-gray-800 shadow-md px-12 fixed w-full z-50" aria-label="Main Navigation"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-2">
+            <div class="text-2xl font-bold text-gray-800">
+              <a href="/" aria-label="Presync.tech Home">presync<span class="text-blue-600">.tech</span></a>
+            </div>
+          </div>
+          <div class="hidden md:flex space-x-10">
+            <a href="#home" class="hover:text-blue-600 transition duration-300" aria-label="Go to Home section"
+              >Home</a
+            >
+            <a href="#about" class="hover:text-blue-600 transition duration-300" aria-label="Learn about Presync.tech"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="hover:text-blue-600 transition duration-300" aria-label="View our services"
+              >Services</a
+            >
+            <a
+              href="#portfolio"
+              class="hover:text-blue-600 transition duration-300" aria-label="Explore our portfolio"
+              >Portfolio</a
+            >
+            <a href="#team" class="hover:text-blue-600 transition duration-300" aria-label="Meet our team"
+              >Team</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-blue-600 transition duration-300" aria-label="Contact us"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-800 focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu - Light theme -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 shadow-md" aria-labelledby="mobile-menu-button">
+        <div class="container mx-auto px-4 flex flex-col space-y-3">
+          <a
+            href="#home"
+            class="block py-2 hover:text-blue-600 transition duration-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block py-2 hover:text-blue-600 transition duration-300"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="block py-2 hover:text-blue-600 transition duration-300"
+            >Services</a
+          >
+          <a
+            href="#portfolio"
+            class="block py-2 hover:text-blue-600 transition duration-300"
+            >Portfolio</a
+          >
+          <a
+            href="#team"
+            class="block py-2 hover:text-blue-600 transition duration-300"
+            >Team</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 hover:text-blue-600 transition duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section - Light theme -->
+    <section
+      id="home"
+      class="pt-28 pb-20 text-gray-800 relative overflow-hidden px-12"
+    >
+      <!-- Main Content -->
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 animate-on-scroll">
+            <div
+              class="inline-block px-4 py-2 rounded-full bg-blue-100 backdrop-filter backdrop-blur-sm border border-blue-300 border-opacity-80 mb-6"
+            >
+              <span class="text-blue-800 text-sm font-medium flex items-center">
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse"
+                ></span>
+                Leading Software Engineering Solutions
+              </span>
+            </div>
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900"
+            >
+              Transforming Ideas Into
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600"
+                >Digital Reality</span
+              >
+            </h1>
+            <p
+              class="text-lg md:text-xl mb-8 text-gray-700 max-w-lg font-medium"
+            >
+              We build cutting-edge software solutions that drive business
+              growth and innovation using modern technologies.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <a
+                href="#contact"
+                class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-md transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center text-center shadow-lg border border-blue-500 border-opacity-20" aria-label="Get started with Presync.tech"
+              >
+                <span>Get Started</span>
+                <svg
+                  class="w-5 h-5 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="#services"
+                class="bg-white hover:bg-gray-50 text-blue-700 font-semibold px-6 py-3 rounded-md transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl border border-blue-200 flex items-center justify-center" aria-label="View our services"
+              >
+                <span>Our Services</span>
+                <svg
+                  class="w-5 h-5 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Stats/Features Section - Light theme -->
+            <div class="mt-20 md:block">
+              <p class="text-sm text-blue-700 mb-4 font-medium">
+                Why choose Presync.tech:
+              </p>
+              <div class="grid grid-cols-3 gap-4">
+                <div
+                  class="flex items-center space-x-2 p-2 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:transform hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 shadow-md border border-blue-300"
+                  >
+                    <i class="fas fa-check text-white text-sm" aria-hidden="true"></i>
+                  </div>
+                  <span class="text-gray-800 text-sm font-medium"
+                    >Enterprise-grade</span
+                  >
+                </div>
+                <div
+                  class="flex items-center space-x-2 p-2 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:transform hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 shadow-md border border-blue-300"
+                  >
+                    <i class="fas fa-check text-white text-sm" aria-hidden="true"></i>
+                  </div>
+                  <span class="text-gray-800 text-sm font-medium"
+                    >99.9% Uptime</span
+                  >
+                </div>
+                <div
+                  class="flex items-center space-x-2 p-2 rounded-lg transition-all duration-300 hover:bg-gray-100 hover:transform hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 shadow-md border border-blue-300"
+                  >
+                    <i class="fas fa-check text-white text-sm" aria-hidden="true"></i>
+                  </div>
+                  <span class="text-gray-800 text-sm font-medium"
+                    >24/7 Support</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="md:w-1/2 flex justify-center relative animate-on-scroll"
+            style="animation-delay: 0.3s"
+          >
+            <!-- 3D-like Hero Illustration - Light theme -->
+            <div class="hero-image-container">
+              <div
+                class="hero-main-circle bg-gradient-to-br from-blue-400 to-blue-500 rounded-full shadow-xl border-2 border-blue-300"
+              ></div>
+              <div class="hero-card hero-card-1">
+                <div
+                  class="hero-card-icon bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg text-white"
+                >
+                  <i class="fas fa-code" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-bold text-sm">MERN Stack</h4>
+                  <p class="text-blue-600 text-xs">Full-stack Development</p>
+                </div>
+              </div>
+              <div class="hero-card hero-card-2">
+                <div
+                  class="hero-card-icon bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg text-white"
+                >
+                  <i class="fas fa-robot" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-bold text-sm">AI & ML</h4>
+                  <p class="text-blue-600 text-xs">Intelligent Solutions</p>
+                </div>
+              </div>
+              <div class="hero-card hero-card-3">
+                <div
+                  class="hero-card-icon bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg text-white"
+                >
+                  <i class="fas fa-database" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-bold text-sm">Data Systems</h4>
+                  <p class="text-blue-600 text-xs">Scalable & Secure</p>
+                </div>
+              </div>
+              <div class="hero-dots hero-dots-1"></div>
+              <div class="hero-dots hero-dots-2"></div>
+                <img
+                src="assets/images/hero2222.svg"
+                alt="3D visualization of software development technologies" class="hero-center-image" width="400" height="400" loading="eager"
+                />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Counter - Light theme -->
+        <div
+          class="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 text-center pt-8 border-t border-gray-200"
+        >
+          <div
+            class="transform transition-transform duration-300 hover:-translate-y-2 relative group"
+          >
+            <div
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 counter-value"
+              data-count="3"
+            >
+              0
+            </div>
+            <p class="text-blue-700 font-medium">Completed Projects</p>
+            <div
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-500 transform -translate-x-1/2 transition-all duration-300 group-hover:w-8"
+            ></div>
+          </div>
+          <div
+            class="transform transition-transform duration-300 hover:-translate-y-2 relative group"
+          >
+            <div
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 counter-value"
+              data-count="3"
+            >
+              0
+            </div>
+            <p class="text-blue-700 font-medium">Happy Clients</p>
+            <div
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-500 transform -translate-x-1/2 transition-all duration-300 group-hover:w-8"
+            ></div>
+          </div>
+          <div
+            class="transform transition-transform duration-300 hover:-translate-y-2 relative group"
+          >
+            <div
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 counter-value"
+              data-count="6"
+            >
+              0
+            </div>
+            <p class="text-blue-700 font-medium">Team Experts</p>
+            <div
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-500 transform -translate-x-1/2 transition-all duration-300 group-hover:w-8"
+            ></div>
+          </div>
+          <div
+            class="transform transition-transform duration-300 hover:-translate-y-2 relative group"
+          >
+            <div
+              class="text-3xl md:text-4xl font-bold text-gray-900 mb-2 counter-value"
+              data-count="3"
+            >
+              0
+            </div>
+            <p class="text-blue-700 font-medium">Years Experience</p>
+            <div
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-blue-500 transform -translate-x-1/2 transition-all duration-300 group-hover:w-8"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section - Light theme -->
+    <section id="about" class="py-20 text-gray-800 relative overflow-hidden px-12 bg-gray-50">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            About Presync.tech
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            We're a forward-thinking software engineering company dedicated to
+            delivering innovative solutions for businesses of all sizes.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border border-blue-100 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg"
+            >
+              <i class="fas fa-lightbulb text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Our Mission
+            </h3>
+            <p class="text-gray-700 text-center">
+              To empower businesses through innovative technology solutions that
+              drive growth and operational excellence.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border border-blue-100 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg"
+            >
+              <i class="fas fa-eye text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Our Vision
+            </h3>
+            <p class="text-gray-700 text-center">
+              To be a global leader in software engineering, recognized for our
+              expertise, innovation, and client-focused approach.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border border-blue-100 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg"
+            >
+              <i class="fas fa-gem text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Our Values
+            </h3>
+            <p class="text-gray-700 text-center">
+              Excellence, innovation, integrity, and client success are at the
+              core of everything we do.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section - Light theme -->
+    <section
+      id="services"
+      class="py-20 text-gray-800 relative overflow-hidden px-12"
+    >
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Services
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Comprehensive software solutions tailored to your business needs.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-b-4 border-blue-500 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-code text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Web Development
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Building responsive, high-performance web applications using MERN
+              stack (MongoDB, Express, React, Node.js).
+            </p>
+            <a
+              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria-label="Learn more about our Web Development services"
+            >
+              Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-b-4 border-blue-500 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-server text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Backend Engineering
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Robust backend services with Java, Spring Boot, Go, and
+              enterprise-grade database solutions with PostgreSQL.
+            </p>
+            <a
+              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria-label="Learn more about our Backend Engineering services"
+            >
+              Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-b-4 border-blue-500 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-robot text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              AI & ML Solutions
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Cutting-edge artificial intelligence and machine learning
+              solutions for data analysis, prediction, and automation.
+            </p>
+            <a
+              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria-label="Learn more about our AI & ML Solutions"
+            >
+              Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-b-4 border-blue-500 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-mobile-alt text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Mobile App Development
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Cross-platform and native mobile applications that provide
+              seamless user experiences across all devices.
+            </p>
+            <a
+              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria-label="Learn more about our Mobile App Development"
+            >
+              Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-b-4 border-blue-500 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-cloud text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              Cloud Solutions
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Scalable cloud architecture and deployment solutions leveraging
+              AWS, Azure, and Google Cloud.
+            </p>
+            <a
+              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria-label="Learn more about our Cloud Solutions"
+            >
+              Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- SaaS Solutions -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border-b-4 border-blue-500 hover:transform hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-cubes text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">SaaS Solutions</h3>
+            <p class="text-gray-700 mb-4">
+              End-to-end software-as-a-service platforms with scalable architecture, multi-tenancy support, and subscription management.
+            </p>
+            <a
+              href="#contact"
+              class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center" aria-label="Learn more about our SaaS Solutions"
+            >
+              Learn More <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section - Light theme -->
+    <section class="py-20 text-gray-800 relative overflow-hidden px-12 bg-gray-50">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Tech Stack
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            We leverage cutting-edge technologies to build robust, scalable
+            solutions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/react.svg"
+              alt="React"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">React</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/node.svg"
+              alt="Node.js"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Node.js</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/mongodb.svg"
+              alt="MongoDB"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">MongoDB</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/postgres.svg"
+              alt="PostgreSQL"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">PostgreSQL</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/java.svg"
+              alt="Java"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Java</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/go.svg"
+              alt="Go"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Go</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/spring.svg"
+              alt="Spring Boot"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Spring Boot</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/tensorflow.svg"
+              alt="TensorFlow"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">TensorFlow</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/aws.svg"
+              alt="AWS"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">AWS</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/docker.svg"
+              alt="Docker"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Docker</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/kubernetes.svg"
+              alt="Kubernetes"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Kubernetes</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:-translate-y-2"
+          >
+            <img
+              src="assets/images/tech/python.svg"
+              alt="Python"
+              class="h-16 mb-4"
+            />
+            <p class="font-medium text-gray-800">Python</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section - Light theme -->
+    <section id="portfolio" class="py-20 text-gray-800 relative overflow-hidden px-12">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Portfolio
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Explore our successful projects and see how we've helped businesses transform through advanced software engineering.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1: E-commerce Platform -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <img
+              src="assets/images/portfolio/project1.jpg"
+              alt="E-commerce Platform with AI-powered recommendations"
+              class="w-full h-48 object-cover"
+              width="400" 
+              height="192"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                E-commerce Platform
+              </h3>
+              <p class="text-gray-700 mb-4">
+                A fully-featured e-commerce platform with real-time inventory
+                management and AI-powered recommendations.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >React</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >MongoDB</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                aria-label="View E-commerce Platform case study"
+              >
+                View Case Study <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: AI-Powered Analytics -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <img
+              src="assets/images/portfolio/project3.jpg"
+              alt="AI-Powered Analytics platform with market trend predictions"
+              class="w-full h-48 object-cover"
+              width="400" 
+              height="192"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                AI-Powered Analytics
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Advanced analytics platform using machine learning to predict
+                market trends and customer behavior.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >TensorFlow</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >AWS</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                aria-label="View AI-Powered Analytics case study"
+              >
+                View Case Study <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Supply Chain Solution -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <img
+              src="assets/images/portfolio/project6.jpg"
+              alt="Supply Chain Solution using blockchain technology"
+              class="w-full h-48 object-cover"
+              width="400" 
+              height="192"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Supply Chain Solution
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Blockchain-based supply chain management system ensuring
+                transparency and traceability.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Blockchain</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Go</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >React</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                aria-label="View Supply Chain Solution case study"
+              >
+                View Case Study <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Enterprise Resource Planning -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <img
+              src="assets/images/portfolio/project2.jpg"
+              alt="Enterprise Resource Planning Software"
+              class="w-full h-48 object-cover"
+              width="400" 
+              height="192"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Enterprise Resource Planning
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Comprehensive ERP software solution integrating operations, finance, HR, and supply chain management.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Java</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Spring Boot</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >PostgreSQL</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                aria-label="View Enterprise Resource Planning case study"
+              >
+                View Case Study <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: Custom CRM System -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <img
+              src="assets/images/portfolio/project4.jpg"
+              alt="Custom CRM System Software"
+              class="w-full h-48 object-cover"
+              width="400" 
+              height="192"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Custom CRM System
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Tailored customer relationship management software with advanced analytics and automation features.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Vue.js</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >.NET Core</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >SQL Server</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                aria-label="View Custom CRM System case study"
+              >
+                View Case Study <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 6: Intelligent Education Platform -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <img
+              src="assets/images/portfolio/project5.jpg"
+              alt="Intelligent Education Platform with personalized learning"
+              class="w-full h-48 object-cover"
+              width="400" 
+              height="192"
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                Intelligent Education Platform
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Adaptive learning software with personalized curriculum delivery, real-time progress analytics, and AI-driven student engagement tools.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >React Native</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                  >Machine Learning</span
+                >
+              </div>
+              <a
+                href="#"
+                class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                aria-label="View Intelligent Education Platform case study"
+              >
+                View Case Study <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#contact"
+            class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-md transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl inline-block border border-blue-500 border-opacity-20"
+            aria-label="Start your software project with Presync.tech"
+          >
+            Start Your Project
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section - Light theme -->
+    <section id="team" class="py-20 text-gray-800 relative overflow-hidden px-12 bg-gray-50">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Expert Team
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Meet our founding team of industry experts who lead Presync.tech's innovation and growth.
+          </p>
+        </div>
+
+        <!-- Team grid -->
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Team Member 1: Md. Mahbub Alam -->
+            <div
+              class="bg-white rounded-lg overflow-hidden text-center shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+            >
+              <img
+                src="assets/images/team/member1.jpg"
+                alt="Md. Mahbub Alam - AI/ML Lead & Co-Founder of Presync.tech"
+                class="w-full h-60 object-cover"
+                width="400" 
+                height="240"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">
+                  Md. Mahbub Alam
+                </h3>
+                <p class="text-blue-700 mb-3">AI/ML Lead & Co-Founder</p>
+                <p class="text-gray-700 mb-4">
+                  Expert in neural architecture search, transformer-based NLP models, and computer vision algorithms with extensive experience in deploying ML systems at scale.
+                </p>
+                <div class="flex justify-center space-x-4">
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Md. Mahbub Alam's LinkedIn profile"
+                  >
+                    <i class="fab fa-linkedin text-lg" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://github.com/iammahbubalam"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Md. Mahbub Alam's GitHub profile"
+                  >
+                    <i class="fab fa-github text-lg" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Md. Mahbub Alam's Twitter profile"
+                  >
+                    <i class="fab fa-twitter text-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2: Likhon Sarker -->
+            <div
+              class="bg-white rounded-lg overflow-hidden text-center shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+            >
+              <img
+                src="assets/images/team/member2.jpg"
+                alt="Likhon Sarker - Software Engineering Lead & Co-Founder of Presync.tech"
+                class="w-full h-60 object-cover object-center"
+                width="400" 
+                height="240"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">
+                  Likhon Sarker
+                </h3>
+                <p class="text-blue-700 mb-3">Software Engineering Lead & Co-Founder</p>
+                <p class="text-gray-700 mb-4">
+                  Distinguished architect specializing in distributed systems, microservices orchestration, and high-throughput event-driven architectures with DevOps integration.
+                </p>
+                <div class="flex justify-center space-x-4">
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Likhon Sarker's LinkedIn profile"
+                  >
+                    <i class="fab fa-linkedin text-lg" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Likhon22"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Likhon Sarker's GitHub profile"
+                  >
+                    <i class="fab fa-github text-lg" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Likhon Sarker's Twitter profile"
+                  >
+                    <i class="fab fa-twitter text-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 3: Mark Shawn -->
+            <div
+              class="bg-white rounded-lg overflow-hidden text-center shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+            >
+              <img
+                src="assets/images/team/member3.jpg"
+                alt="Mark Shawn - Marketing Lead & Co-Founder at Presync.tech"
+                class="w-full h-60 object-cover object-center"
+                width="400" 
+                height="240"
+                loading="lazy"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">Mark Shawn</h3>
+                <p class="text-blue-700 mb-3">Marketing Lead & Co-Founder</p>
+                <p class="text-gray-700 mb-4">
+                  Strategic marketer with expertise in SaaS growth models, B2B customer acquisition funnels, and data-driven market penetration strategies for tech verticals.
+                </p>
+                <div class="flex justify-center space-x-4">
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Mark Shawn's LinkedIn profile"
+                  >
+                    <i class="fab fa-linkedin text-lg" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Rifate-nur-shawn"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Mark Shawn's GitHub profile"
+                  >
+                    <i class="fab fa-github text-lg" aria-hidden="true"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label="Mark Shawn's Twitter profile"
+                  >
+                    <i class="fab fa-twitter text-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section - Light theme -->
+    <section class="py-20 text-gray-800 relative overflow-hidden px-12">
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Client Testimonials
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            What our clients are saying about their experience working with us.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-quote-left text-4xl"></i>
+            </div>
+            <p class="text-gray-700 mb-6">
+              Presync.tech transformed our business with their exceptional
+              e-commerce platform. Their team was professional, responsive, and
+              delivered beyond our expectations.
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/images/testimonials/client1.jpg"
+                alt="Client"
+                class="w-12 h-12 rounded-full object-cover mr-4"
+              />
+              <div>
+                <h4 class="text-gray-900 font-semibold">Michael Brown</h4>
+                <h4 class="text-gray-900 font-semibold">Michael Brown</h4>
+                <p class="text-gray-500 text-sm">CEO, RetailX</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-quote-left text-4xl"></i>
+            </div>
+            <p class="text-gray-700 mb-6">
+              The AI solution developed by Presync.tech increased our
+              operational efficiency by 40%. Their expertise in machine learning
+              is unmatched in the industry.
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/images/testimonials/client2.jpg"
+                alt="Client"
+                class="w-12 h-12 rounded-full object-cover mr-4"
+              />
+              <div>
+                <h4 class="text-gray-900 font-semibold">Jennifer Lee</h4>
+                <p class="text-gray-500 text-sm">CTO, DataFlow Inc.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition duration-300 border border-gray-200"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-quote-left text-4xl"></i>
+            </div>
+            <p class="text-gray-700 mb-6">
+              Working with Presync.tech on our healthcare platform was a
+              game-changer. Their attention to security and compliance was
+              impeccable, and the end product exceeded our expectations.
+            </p>
+            <div class="flex items-center">
+              <img
+                src="assets/images/testimonials/client3.jpg"
+                alt="Client"
+                class="w-12 h-12 rounded-full object-cover mr-4"
+              />
+              <div>
+                <h4 class="text-gray-900 font-semibold">Robert Martinez</h4>
+                <p class="text-gray-500 text-sm">Founder, MedConnectPro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Light theme -->
+    <section
+      id="contact"
+      class="py-20 text-gray-800 relative overflow-hidden px-12 bg-gray-50"
+    >
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Get In Touch
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+            Ready to start your project? Contact us today for a consultation.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg border border-gray-200"
+          >
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">
+              Contact Information
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div
+                  class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 rounded-full mr-4 shadow-lg"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Our Location</h4>
+                  <p class="text-gray-700">
+                    Block-B, Sayed Nagar, Vatara, Dhaka-1212
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 rounded-full mr-4 shadow-lg"
+                >
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Email Us</h4>
+                  <p class="text-gray-700">presync.tech@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 rounded-full mr-4 shadow-lg"
+                >
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Call Us</h4>
+                  <p class="text-gray-700">+8801997125063, +8801726131573</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div
+                  class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 rounded-full mr-4 shadow-lg"
+                >
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Working Hours</h4>
+                  <p class="text-gray-700">
+                    24/7 - We're always available for a consultation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="font-semibold text-gray-900 mb-4">Follow Us</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/company/105935955/admin/page-posts/published/"
+                  class="bg-gray-100 hover:bg-gray-200 text-blue-600 p-3 rounded-full transition duration-300"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-gray-100 hover:bg-gray-200 text-blue-600 p-3 rounded-full transition duration-300"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-gray-100 hover:bg-gray-200 text-blue-600 p-3 rounded-full transition duration-300"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-gray-100 hover:bg-gray-200 text-blue-600 p-3 rounded-full transition duration-300"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form class="space-y-6 bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-gray-800 font-medium mb-2"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="block text-gray-800 font-medium mb-2"
+                    >Your Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="subject" class="block text-gray-800 font-medium mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+                  placeholder="Project Inquiry"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-gray-800 font-medium mb-2"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+                  placeholder="Tell us about your project..."
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-md transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl w-full border border-blue-500 border-opacity-20"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer - Light theme -->
+    <footer
+      class="py-12 relative z-10 bg-gray-100 text-gray-600 px-12"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <div class="text-2xl font-bold text-gray-800 mb-6">
+              presync<span class="text-blue-600">.tech</span>
+            </div>
+            <p class="text-gray-600 mb-6">
+              Transforming businesses through innovative software solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.linkedin.com/company/105935955/admin/page-posts/published/"
+                class="text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-blue-600 transition-colors"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6 text-gray-800">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Backend Engineering</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >AI & ML Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Mobile App Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Cloud Solutions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6 text-gray-800">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-blue-600 transition-colors"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-6 text-gray-800">Newsletter</h3>
+            <p class="text-gray-600 mb-4">
+              Subscribe to our newsletter for the latest updates.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white border border-gray-300"
+              />
+              <button
+                type="submit"
+                class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition duration-300 text-white"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <hr class="border-gray-300 my-8" />
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-600 mb-4 md:mb-0">
+            &copy; 2025 Presync.tech. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-600 hover:text-blue-600 transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-blue-600 transition-colors"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-blue-600 transition-colors"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
