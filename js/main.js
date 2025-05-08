@@ -190,21 +190,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Portfolio filtering functionality
-function filterProjects(category) {
-    const projects = document.querySelectorAll('.portfolio-item');
-    
-    if (category === 'all') {
-        projects.forEach(project => {
-            project.style.display = 'block';
-        });
-    } else {
-        projects.forEach(project => {
-            if (project.dataset.category === category) {
-                project.style.display = 'block';
-            } else {
-                project.style.display = 'none';
-            }
-        });
-    }
-}
